@@ -1,13 +1,250 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  margin: 0;
+  min-width: 250px;
+  background-color: #ecedf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  position: relative;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  user-select: none;
+}
+#list-job {
+  font-size: 18px;
+}
+.name-status {
+  width: 90%;
+}
+.name-status:hover {
+  background: #ddd;
+}
+
+.name-status.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.name-status.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.todo-content {
+  background-color: #ecedf6;
+  min-height: 600px;
+}
+.todo-job {
+  align-items: center;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 10px;
+}
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.icon-job {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon-job .close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.icon-job .edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.todoList {
+  background-color: #606066;
+}
+.todolist-task {
+  display: flex;
+  justify-content: space-between;
+}
+.add-todolist {
+  flex: 1;
+}
+.header {
+  padding: 15px 20px;
+  color: white;
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading {
+  text-align: center;
+}
+
+.input-task {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 60%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.addBtn {
+  padding: 10px 40px;
+  border: none;
+  background: #df6808;
+  color: #555;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.editBtn {
+  padding: 10px 40px;
+  border: none;
+  background: #df6808;
+  color: #555;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.todo-list {
+  text-align: center;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+}
+.select-status {
+  background-color: #cccdde;
+  border: none;
+  outline: none;
+  color: #585858;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.select-filter-status,
+.select-sort-todo {
+  background-color: #cccdde;
+  border: none;
+  outline: none;
+  color: #585858;
+  cursor: pointer;
+  padding: 10px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.todo-title-completed {
+  text-decoration: line-through;
+  color: #606066;
+}
+.todo-time {
+  font-size: 12px;
+  color: #585858;
+}
+.icon-job-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border-radius: 4px;
+  color: #585858;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 5px;
+}
+.icon-job-button:hover {
+  background-color: #dedfe1;
+}
+.input-search {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn-search {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #df6808;
+}
+
+.slider {
+  text-align: center;
+}
+.slider button {
+  margin: 10px;
+  padding: 8px 25px;
+  cursor: pointer;
+}
+
+.loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-icon {
+  font-size: 30px;
 }
